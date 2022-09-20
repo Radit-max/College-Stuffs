@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Raditya Pramana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 01:00:04 PM"/>
+        <attribute name="created" value="UmFkaXR5YSBQcmFtYW5hO0RFU0tUT1AtNlRRRjQxUDsyMDIyLTA5LTA5OzAxOjAyOjQzIFBNOzM3ODU="/>
+        <attribute name="edited" value="UmFkaXR5YSBQcmFtYW5hO0RFU0tUT1AtNlRRRjQxUDsyMDIyLTA5LTE0OzAxOjAwOjA0IFBNOzM7Mzg4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="batas, x" type="Integer" array="False" size=""/>
+            <comment text="input nilai yang ingin dimasukkan (dari 1 hingga batas)"/>
+            <input variable="batas"/>
+            <comment text="bilangan asli dimulai dari angka 1"/>
+            <for variable="x" start="1" end="batas" direction="inc" step="1">
+                <output expression="x" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Raditya Pramana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 01:55:12 PM"/>
+        <attribute name="created" value="UmFkaXR5YSBQcmFtYW5hO0RFU0tUT1AtNlRRRjQxUDsyMDIyLTA5LTEyOzAxOjE0OjM5IFBNOzM3ODc="/>
+        <attribute name="edited" value="UmFkaXR5YSBQcmFtYW5hO0RFU0tUT1AtNlRRRjQxUDsyMDIyLTA5LTE0OzAxOjU1OjEyIFBNOzY7Mzg5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bawah, atas, angka, x" type="Integer" array="False" size=""/>
+            <comment text="bil prima akan didefinisikan, sehingga perlu menggunakan type Boolean."/>
+            <declare name="prima" type="Boolean" array="False" size=""/>
+            <assign variable="bawah" expression="900"/>
+            <assign variable="atas" expression="1000"/>
+            <for variable="angka" start="bawah" end="atas" direction="inc" step="1">
+                <assign variable="prima" expression="TRUE"/>
+                <for variable="x" start="2" end="angka-1" direction="inc" step="1">
+                    <if expression="angka%x==0">
+                        <then>
+                            <assign variable="prima" expression="FALSE"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="prima==TRUE">
+                    <then>
+                        <output expression="angka" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

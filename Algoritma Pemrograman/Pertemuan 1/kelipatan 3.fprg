@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Raditya Pramana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 01:01:03 PM"/>
+        <attribute name="created" value="UmFkaXR5YSBQcmFtYW5hO0RFU0tUT1AtNlRRRjQxUDsyMDIyLTA5LTA5OzAxOjA0OjQ5IFBNOzM3OTM="/>
+        <attribute name="edited" value="UmFkaXR5YSBQcmFtYW5hO0RFU0tUT1AtNlRRRjQxUDsyMDIyLTA5LTE0OzAxOjAxOjAzIFBNOzI7Mzg4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, x" type="Integer" array="False" size=""/>
+            <comment text="n didefinisikan sebagai n deret pertama kelipatan 3"/>
+            <input variable="n"/>
+            <for variable="x" start="1" end="n" direction="inc" step="1">
+                <output expression="3*x" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
